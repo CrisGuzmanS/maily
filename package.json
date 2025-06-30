@@ -1,24 +1,20 @@
 {
-  "name": "maily",
-  "version": "1.0.0",
-  "description": "Maily es un paquete minimalista para el envío de correos electrónicos en Node.js utilizando nodemailer, con soporte para plantillas HTML basadas en Handlebars y una sintaxis fluida y sencilla.",
+  "name": "meily",
+  "version": "1.0.2",
+  "description": "Meily es un paquete minimalista para el envío de correos electrónicos en Node.js utilizando nodemailer, con soporte para plantillas HTML basadas en Handlebars y una sintaxis fluida y sencilla.",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "prepare": "npm run build",
-    "preversion": "npm run lint",
-    "prepublishOnly": "npm test && npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CrisGuzmanS/maily.git"
   },
   "keywords": [
-    "maily",
+    "meily",
     "emails",
     "mails",
     "minimalist",
