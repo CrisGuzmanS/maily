@@ -1,0 +1,44 @@
+{
+  "name": "maily",
+  "version": "1.0.0",
+  "description": "Maily es un paquete minimalista para el envío de correos electrónicos en Node.js utilizando nodemailer, con soporte para plantillas HTML basadas en Handlebars y una sintaxis fluida y sencilla.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "prepublishOnly": "npm test && npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrisGuzmanS/maily.git"
+  },
+  "keywords": [
+    "maily",
+    "emails",
+    "mails",
+    "minimalist",
+    "minimalista",
+    "correos"
+  ],
+  "author": "Cristian Emanuelle Guzmán Suárez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CrisGuzmanS/maily/issues"
+  },
+  "homepage": "https://github.com/CrisGuzmanS/maily#readme",
+  "dependencies": {
+    "arrowy-env": "^1.0.0",
+    "handlebars": "^4.7.8",
+    "nodemailer": "^6.9.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.44.1"
+  }
+}
