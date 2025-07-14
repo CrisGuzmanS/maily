@@ -6,7 +6,7 @@ import handlebars from 'handlebars';
 const transporter = nodemailer.createTransport({
     host: env('MAIL_HOST'),
     port: env('MAIL_PORT'),
-    secure: true,
+    secure: env('MAIL_SECURE') === 'true' ? true : false,
     auth: {
         user: env('MAIL_FROM'),
         pass: env('MAIL_PASSWORD')

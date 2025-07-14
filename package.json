@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/CrisGuzmanS/maily#readme",
   "dependencies": {
-    "arrowy-env": "^1.0.0",
+    "arrowy-env": "^2.0.1",
     "handlebars": "^4.7.8",
     "nodemailer": "^6.9.0"
   },
